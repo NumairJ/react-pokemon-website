@@ -10,9 +10,9 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<PokedexTable />} />
-          <Route path="Team-Builder" element={<PokeTeamBuilder />} />
-          <Route path="*" element={<div>HELP</div>} />
+          <Route path="react-pokemon-website/Pokedex" element={<PokedexTable />} />
+          <Route path="react-pokemon-website/Team-Builder" element={<PokeTeamBuilder />} />
+          <Route path="*" element={<div>Click On Navbar</div>} />
         </Route>
       </Routes>
     </HashRouter>
