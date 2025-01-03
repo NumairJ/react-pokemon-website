@@ -1,17 +1,16 @@
 import React from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import PokedexTable from "./PokedexTable";
 import PokeTeamBuilder from "./PokeTeamBuilder";
 import Layout from "./Layout";
-
-import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="react-pokemon-website/Pokedex" element={<PokedexTable />} />
-          <Route path="react-pokemon-website/Team-Builder" element={<PokeTeamBuilder />} />
+          <Route path="Pokedex" element={<PokedexTable />} />
+          <Route path="Team-Builder" element={<PokeTeamBuilder />} />
           <Route path="*" element={<div>Click On Navbar</div>} />
         </Route>
       </Routes>
