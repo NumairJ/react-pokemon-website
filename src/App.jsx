@@ -3,11 +3,11 @@ import PokedexTable from "./PokedexTable";
 import PokeTeamBuilder from "./PokeTeamBuilder";
 import Layout from "./Layout";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<PokedexTable />} />
@@ -15,7 +15,7 @@ function App() {
           <Route path="*" element={<div>HELP</div>} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
