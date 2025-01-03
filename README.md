@@ -16,6 +16,7 @@ Access the live website via [GitHub Pages](https://numairj.github.io/react-pokem
 
 # Future Enhancements
 In the future, I aim to:
+- Add regional, mega and misc forms of pokemon.
 - Improve the responsive design of the Team Builder for better usability on all devices.
 - Optimize first load times to enhance user experience.
 - Refactor code into reusable components and functions for better modularity and maintainability.
